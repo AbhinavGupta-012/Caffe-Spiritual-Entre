@@ -1,0 +1,32 @@
+span{
+		color: crimson;
+}
+.navigation .special{
+			color: lemonchiffon;
+}
+.remove{ 
+		color: white;
+}
+.text{
+		color: white;
+}
+.number{
+	font-size: 25px;
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background-color: crimson;
+	align-items: right;
+	justify-content: center;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 1px;
+}
+.employee_button{
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	background-color: transparent;
+	border: none;
+}

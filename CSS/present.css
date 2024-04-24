@@ -1,0 +1,10 @@
+.present{
+			height: 40px;
+			padding: 70px;	
+}
+.present p{
+			text-align: center;
+			font-size: 40px;
+			color: white;
+			font-weight: 600;
+}

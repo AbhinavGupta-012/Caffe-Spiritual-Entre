@@ -1,0 +1,29 @@
+.navigation{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 30px 100px;
+}
+.navigation .heading{
+			color: white;
+			font-size: 67px;
+			font-weight: 600;
+			cursor: pointer;
+}
+.bar li{
+			list-style: none;
+			display: inline-block;
+}
+.bar li a{
+			text-decoration: none;
+			color: white;
+			font-size: 27px;
+			font-weight: 600;
+			margin-left: 25px;
+			transition: .4s ease;
+}
+.bar li a:hover{
+					color: crimson;
+					padding: 5px 10px;
+					border: 2px solid white;
+}

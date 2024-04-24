@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<title> Caffe Spiritual Entré </title>
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\all.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\navigation.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\visible.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\span.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\menu-table.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\cafeeeee.css">
+			<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel = "icon" href = "..\Images\coffe icon.jpg">
+			<link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+			<script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+		</head>
+		
+		<body>
+			<div class = "main">
+				<div class = "navigation">
+						<h1 class = "heading"> <span>C</span>affe<span> S</span>piritual<span> E</span>ntré </h1>
+						<ul class = "bar">
+							<li> <a href = "Caffe Spiritual Entré.html"> Home </a> </li>
+							<li> <a href = "Menu.html"> <span> Menu </span> </a> </li>
+							<li> <a href = "Login.html"> Account </a> </li>
+						</ul>
+				</div>
+				<div class = "menu-table">
+					<p> Select Categories </p>
+						<div class = "categories">
+							<ul class = "category">
+								<li> <a href = "#Coffee"> Coffee Delights </a> </li>
+								<li> <a href = "#Drinks"> Cool Quenchers </a> </li>
+								<li> <a href = "#Snacks"> Savory Snacks </a> </li>
+								<li> <a href = "#Deserts"> Divine Deserts </a> </li>
+							</ul>
+						</div>
+						<div class = "menu">
+							<div class = "menu-heading">
+								<h2 id = "Coffee"> &mdash;Coffee Delights&mdash; </h2>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\cappuccino.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Cappuccino Bliss </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹300 </h5>
+										</h5>
+									</div>
+									<p> Perfectly balanced espresso, steamed milk, and velvety foam. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+									<div id="popup-message" class="popup">
+										<span class="close" onclick="closePopup()">&times;</span>
+										<p id="popup-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\espresso.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Espresso Elegance </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹210 </h5>
+										</h5>
+									</div>
+									<p> A bold and rich shot of espresso. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\mocha.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6>
+										<h5> Mocha Marvel </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹335 </h5>
+										</h5>
+									</div>
+									<p> Indulgent blend of espresso, steamed milk and chocolate. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\latte.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Latte Harmony </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹315 </h5>
+										</h5>
+									</div>
+									<p> Smooth espresso with a generoud amount of steamed milk. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\iced coffee.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6>
+										<h5> Iced Coffee Refresher </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹250 </h5>
+										</h5>
+									</div>
+									<p> Chilled Coffee served over ice for a refreshing pick-me-up. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\machiato.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Machiato Manifest </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹250 </h5>
+										</h5>
+									</div>
+									<p> Espresso "stained" with a dollop of frothy milk. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\caramel crunch.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Caramel Crunch </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹355 </h5>
+										</h5>
+									</div>
+									<p> Espresso and steamed milk kissed with buttery caramel. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\vanilla velvet.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Vanilla Velvet Latte </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹375 </h5>
+										</h5>
+									</div>
+									<p> Smooth Latte infused with sweet and aromatic vanilla syrup. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							
+							<div class = "menu-heading">
+								<h2 id = "Drinks"> &mdash;Cool Quenchers&mdash; </h2>
+							</div>
+							
+							<div class = "FOOD-items">
+								<img src = "..\Images\Cold-Lemonade-Mojito-Cocktail.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6>
+										<h5> Refrshing Lemonade </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹300 </h5>
+										</h5>
+									</div>
+									<p> Classic Lemonade served over ice with a twist of fresh citrus. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\cucumber-mintcooler.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Cucumber Mint Cooler </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹270 </h5>
+										</h5>
+									</div>
+									<p> Cool Cucumber and Mint Fusion, perfect for a hot day. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\berry_blast.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Berry Blast Smoothie </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹335 </h5>
+										</h5>
+									</div>
+									<p> A medley of berries blended into a smooth and healthy treat. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\tropical ice.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Tropical Paradise Frappe </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹460 </h5>
+										</h5>
+									</div>
+									<p> A tropical blend of fruits and coconut, blended to perfection. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							
+							<div class = "menu-heading">
+								<h2 id = "Snacks"> &mdash;Savory Snacks&mdash; </h2>
+							</div>
+							
+							<div class = "FOOD-items">
+								<img src = "..\Images\cheesy garlic.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6>
+										<h5> Cheesy Garlic Breadsticks </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹460 </h5>
+										</h5>
+									</div>
+									<p> Warm and Crispy Breadsticks topped with melted chees and garlic. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\spinach stuffed pastry.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Spinach and Feta Stuffed Pastry </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹375 </h5>
+										</h5>
+									</div>
+									<p> Flaky pastry filled with a delightful mix of spinach and feta. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\loaded avocado toast.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6>
+										<h5> Loaded Avocado Toast </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹550 </h5>
+										</h5>
+									</div>
+									<p> Avocado spread on toasted artisan bread, topped with cherry tomatoes and feta. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\bruschetta.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Classic Bruschetta </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹420 </h5>
+										</h5>
+									</div>
+									<p> Tomato, basil and garlic on toasted baguette slices. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\pesto panini.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Mozzarella Pesto Panini </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹600 </h5>
+										</h5>
+									</div>
+									<p> Mozzarella, basil pesto and tomatoes grilled to perfection. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\caprese-skewers.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Caprese Skewers </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹540 </h5>
+										</h5>
+									</div>
+									<p> Fresh mozzarella, cherry tomatoes and basil drizzled with balsamic glaze. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\Sweet-Potato-Fries-Horizontal.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Sweet Potato Fries </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹520 </h5>
+										</h5>
+									</div>
+									<p> Crispy sweet potato fries served with a zesty garlic aioli. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\Zucchini-Noodles-with-Pesto-7.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Pesto Zucchini Spirals </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹540 </h5>
+										</h5>
+									</div>
+									<p> Zucchini Noodles tossed in basil pesto for a light and flavorful snack. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							
+							<div class = "menu-heading">
+								<h2 id = "Deserts"> &mdash;Divine Deserts&mdash; </h2>
+							</div>
+							
+							<div class = "FOOD-items">
+								<img src = "..\Images\Chocolate-Lava-Cake-Recipe.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Chocolate Lava Cake </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹500 </h5>
+										</h5>
+									</div>
+									<p> Decadent Chocolate cake with a gooey molten center. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\iStock-1159838603-scaled.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Berry Parfait Delight </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹440 </h5>
+										</h5>
+									</div>
+									<p> Layers of fressh berries, yogurt and granola. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\Tiramisu Temptation.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h6> Bestseller </h6> 
+										<h5> Tiramisu Temptation </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹625 </h5>
+										</h5>
+									</div>
+									<p> Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+							<div class = "FOOD-items">
+								<img src = "..\Images\Lemon Blueberry Cheesecake.jpg">
+								<div class = "details">
+									<div class = "details-sub">
+										<h5> Lemon Blueberry Cheesecake </h5>
+										<h5 class = "details-sub">
+											<h5></h5>
+											<h5 class = "price"> Price: ₹540 </h5>
+										</h5>
+									</div>
+									<p> Creamy cheesecake with a zesty lemon-blueberry topping. </p>
+									<button onclick="showPopup('Item added to cart!')"> Add to Cart </button>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class = "shopping-cart">
+				<div class = "shopping">
+					<div class = "cart-symbol">
+						<button onclick = "showCart()" class = "cart-button"> <i class="fa fa-shopping-cart" style="font-size:50px"> <span class = "number"> 4 </span> </i> </button>
+					</div>
+				</div>
+				<div class = "cart-content">
+					<h3> <button onclick = "showCart()" id = "closecart" class = "btn btn-danger">   &times;   </button> </h3>
+					<header class = "cart-text">
+						<h3> <span>C</span>affe<span> S</span>piritual<span> E</span>ntré </h3>
+						<h2> Your Shopping Cart </h2>
+					</header>
+					<div class = "shopping-content">
+						<div class = "titles">
+							<h3> Product </h3>
+							<h3> Amount </h3>
+							<h3> Quantity </h3>
+						</div>
+						<div class = "listCart">
+							<div class = "item">
+								<div class = "image">
+									<img src = "..\Images\mocha.jpg">
+								</div>
+								<div class = "item-name">
+									<p> Mocha Marvel </p>
+								</div>
+								<div class = "item-price">
+									<p> ₹335 </p>
+								</div>
+								<div class = "item-quantity">
+									<span class = "minus"> < </span>
+									<span class = "simple"> 1 </span>
+									<span class = "plus"> > </span>
+								</div>
+							</div>
+							<div class = "item">
+								<div class = "image">
+									<img src = "..\Images\Cold-Lemonade-Mojito-Cocktail.jpg">
+								</div>
+								<div class = "item-name">
+									<p> Refreshing Lemonade </p>
+								</div>
+								<div class = "item-price">
+									<p> ₹300 </p>
+								</div>
+								<div class = "item-quantity">
+									<span class = "minus"> <</span>
+									<span class = "simple"> 1 </span>
+									<span class = "plus"> > </span>
+								</div>
+							</div>
+							<div class = "item">
+								<div class = "image">
+									<img src = "..\Images\cheesy garlic.jpg">
+								</div>
+								<div class = "item-name">
+									<p> Cheesy Garlic Breadsticks </p>
+								</div>
+								<div class = "item-price">
+									<p> ₹460 </p>
+								</div>
+								<div class = "item-quantity">
+									<span class = "minus"> < </span>
+									<span class = "simple"> 1 </span>
+									<span class = "plus"> > </span>
+								</div>
+							</div>
+							<div class = "item">
+								<div class = "image" class = "tira">
+									<img src = "..\Images\Tiramisu Temptation.jpg">
+								</div>
+								<div class = "item-name">
+									<p> Tiramisu Temptation </p>
+								</div>
+								<div class = "item-price">
+									<p> ₹625 </p>
+								</div>
+								<div class = "item-quantity">
+									<span class = "minus"> <</span>
+									<span class = "simple"> 1 </span>
+									<span class = "plus"> > </span>
+								</div>
+							</div>
+						</div>
+						<a href = "Order Confirmation.html"> <button id = "checkout" class = "btn btn-danger"> Checkout </button> </a>
+					</div>
+				</div>
+			</div>
+			<script src = "..\JS\cart.js"> </script>
+			<script>
+				function showPopup(message) {
+					var popup = document.getElementById("popup-message");
+					var popupText = document.getElementById("popup-text");
+				
+					popupText.innerHTML = message;
+					popup.style.display = "block";
+					setTimeout(function () {
+						closePopup();
+					}, 3000);
+				}
+				function closePopup() {
+					document.getElementById("popup-message").style.display = "none";
+				}
+
+			</script>
+			<py-script>
+				
+			</py-script>
+		</body>
+		</head>
+	</html>

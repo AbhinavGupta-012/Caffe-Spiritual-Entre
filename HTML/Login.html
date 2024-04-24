@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<meta charset = "UTF-8">
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+			<title> Caffe Spiritual Entré </title>
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\all.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\main.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\navigation.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\span.css">
+			<link rel = "stylesheet" href = "..\CSS\login.css">
+			<link rel = "icon" href = "..\Images\coffe icon.jpg">
+			<script src = "http://kit.fontawesome.com/c4254e24a8.js" crossorigin = "anonymous"></script>
+		</head>
+		<body>
+			<div class = "navigation">
+				<h1 class = "heading"> <span>C</span>affe<span> S</span>piritual<span> E</span>ntré </h1>
+				<ul class = "bar">
+					<li> <a href = "Caffe Spiritual Entré.html"> Home </a> </li>
+					<li> <a href = "Menu.html"> Menu </a> </li>
+					<li> <a href = "Login.html"> <span> Account </span> </a> </li>
+				</ul>
+			</div>
+			<div class = "container">
+				<div class = "form-box">
+					<h1 id = "Title"> Sign Up 	</h1>
+					<form>
+						<div class="input-box">
+							<div class="input-field" id="nameField">
+								<i class="fa-solid fa-user"></i>
+								<input type="text" placeholder="Name">
+							</div>
+							<div class="input-field">
+								<i class="fa-solid fa-envelope"></i>
+								<input type="email" placeholder="Email">
+							</div>
+							<div class="input-field">
+								<i class="fa-solid fa-lock"></i>
+								<input type="password" placeholder="Password">
+							</div>
+							<p>Forgot Password?<a href="#">Click Here!</a></p>
+						</div>
+						<div class="btn-field">
+							<button type="button" id="signupBtn">Sign Up</button>
+							<button type="button" id= "signinBtn" class="disable">Sign In</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<div class = "employee">
+				<a href = "C:\Users\Abhinav Gupta\OneDrive\Desktop\Study\FEE Project\Employee info.html"> <button class = "employee_button"> Data </button> </a>
+			</div>
+			<script>
+				let signupBtn= document.getElementById("signupBtn");
+				let signinBtn= document.getElementById("signinBtn");
+				let nameField= document.getElementById("nameField");
+				let title= document.getElementById("title");
+				signinBtn.onclick = function(){
+					nameField.style.maxHeight="0";
+					title.innerHTML="sign In";
+					signupBtn.classList.add("disable");
+					signinBtn.classList.remove("disable");
+				}
+				signinBtn.onclick = function(){
+					nameField.style.maxHeight="0";
+					title.innerHTML="sign In";
+					signupBtn.classList.remove("disable");
+					signinBtn.classList.add("disable");
+				}
+			</script>
+		</body>
+	</html>

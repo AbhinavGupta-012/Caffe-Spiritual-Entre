@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("..\\Images\\coffee-ai-generated.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+    padding: 0 10px 30px 10px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.FOOD-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: .2s ease-in-out;
+    background: white;
+}
+.FOOD-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+    font-size: larger;
+}
+.details>button{
+    background: red;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+}
+h6{
+    color: orangered;
+    font-size: large;
+}
+.shopping{
+	position: fixed;
+	right: 40px;
+	color: white;
+	bottom: 40px;
+	cursor: pointer;
+}
+.cart-symbol{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: crimson;
+	height: 65px;
+	width: 65px;
+	border-radius: 10px;
+}
+/*.cart-symbol:hover{
+	background-color: #876445;
+	width: 1630px;
+	height: 740px;
+	backface-visibility: blur;
+	transition: .4s ease;
+	border: 3px;
+}*/
+.cart-content{
+	position: fixed;
+	background-color: #876445;
+	width: 1630px;
+	height: 740px;
+	transition: .5s;
+	border: 3px;
+	border-radius: 10px;
+	top: 42px;
+	left: 42px;
+	overflow: auto;
+}
+.cart-text{
+	overflow: hidden;
+}
+.cart-text h3{
+	font-size: 40px;
+	color: white;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.cart-text h2{
+	font-size: 40px;
+	color: white;
+	padding-left: 20px;
+	padding-top: 50px;
+	text-align: center;
+}
+body.showcart .cart-content{
+	top: 42px;
+	left: 42px;
+}
+.cart-button{
+	color: white;
+	background-color: crimson;
+	border: none;
+	cursor: pointer;
+}
+.titles{
+	display: flex;
+	color: white;
+	gap: 350px;
+	padding-left: 300px;
+	font-size: 25px;
+	padding-top: 30px;
+}
+#closecart{
+	position: absolute;
+	margin-left: 1593px;
+	cursor: pointer;
+}
+#checkout{
+	cursor: pointer;
+	position: absolute;
+	margin-top: 75px;
+	margin-left: 1520px;
+	font-size: 20px;
+}
+.listCart{
+	color: #FFFDD0;
+}
+.image img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-left: 100px;
+}
+.shopping-content .listCart .item{
+	display: grid;
+	grid-template-columns: 100px 150px 500px 1fr;
+	text-align: center;
+	align-items: center;
+	gap: 50px;
+}
+.item-name{
+	margin-left: 175px;
+}
+.item-price{
+	margin-left: 400px;
+}
+.item-quantity span{
+	display: inline-block;
+	text-align: center;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.item-quantity .simple{
+	background-color: transparent;
+	color: white;
+}
+.cart-content::-webkit-scrollbar{
+	display: none;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 1500px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    z-index: 1;
+    height: 100px;
+    width: 500px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

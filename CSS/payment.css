@@ -1,0 +1,43 @@
+body{
+
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}	
+.confirmation{
+				margin-top: 150px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+}
+p{
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	font-weight: 600;
+}
+.feedback{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+}
+.feedback button{
+					height: 40px;
+					color: black;
+					background: none;
+					font-size: 22px;
+					padding: 5px 30px;
+					margin-top: 20px;
+					border: 2px solid crimson;
+					border-radius: 5px;
+					cursor: pointer;
+					transition: .4s ease;
+}
+.feedback button a{
+					text-decoration: none;
+					color: black;
+}
+.feedback button:hover{
+						background: crimson;
+						border: 2px solid crimson;
+}
