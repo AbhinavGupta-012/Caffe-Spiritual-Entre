@@ -10,7 +10,6 @@ body{
     background-image: url("..\\Images\\bean.jpg");
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 .form-box{
     width: 90%;
@@ -72,6 +71,7 @@ form p a{
     text-decoration: none;
     color: #3c00a0;
 }
+
 .btn-field{
     width: 100%;
     display: flex;

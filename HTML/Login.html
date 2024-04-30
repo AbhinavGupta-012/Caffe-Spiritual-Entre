@@ -8,7 +8,7 @@
 			<link rel = "stylesheet" type = "text/css" href = "..\CSS\main.css">
 			<link rel = "stylesheet" type = "text/css" href = "..\CSS\navigation.css">
 			<link rel = "stylesheet" type = "text/css" href = "..\CSS\span.css">
-			<link rel = "stylesheet" href = "..\CSS\login.css">
+			<link rel = "stylesheet" type = "text/css" href = "..\CSS\login.css">
 			<link rel = "icon" href = "..\Images\coffe icon.jpg">
 			<script src = "http://kit.fontawesome.com/c4254e24a8.js" crossorigin = "anonymous"></script>
 		</head>
@@ -23,45 +23,44 @@
 			</div>
 			<div class = "container">
 				<div class = "form-box">
-					<h1 id = "Title"> Sign Up 	</h1>
+					<h1 id = "Title"> Sign Up </h1>
 					<form>
-						<div class="input-box">
-							<div class="input-field" id="nameField">
-								<i class="fa-solid fa-user"></i>
-								<input type="text" placeholder="Name">
+						<div class = "input-box">
+							<div class = "input-field">
+								<i class = "fa-solid fa-user"> </i>
+								<input type = "email" placeholder = "Email">
 							</div>
-							<div class="input-field">
-								<i class="fa-solid fa-envelope"></i>
-								<input type="email" placeholder="Email">
+							<div class = "input-field"  id = "nameField">
+								<i class = "fa-solid fa-envelope"></i>
+								<input type = "text" placeholder = "Name">
 							</div>
-							<div class="input-field">
-								<i class="fa-solid fa-lock"></i>
-								<input type="password" placeholder="Password">
+							<div class = "input-field">
+								<i class = "fa-solid fa-lock"></i>
+								<input type = "password" placeholder = "Password">
 							</div>
-							<p>Forgot Password?<a href="#">Click Here!</a></p>
+							<p> Forgot Password? <a href = "#"> Click Here! </a> </p>
 						</div>
-						<div class="btn-field">
-							<button type="button" id="signupBtn">Sign Up</button>
-							<button type="button" id= "signinBtn" class="disable">Sign In</button>
-
+						<div class = "btn-field">
+							<button type = "button" id = "signupBtn"> Sign Up </button>
+							<button type = "button" id = "signinBtn" class = "disable"> Sign In </button>
 						</div>
 					</form>
 				</div>
 			</div>
 			<script>
-				let signupBtn= document.getElementById("signupBtn");
-				let signinBtn= document.getElementById("signinBtn");
-				let nameField= document.getElementById("nameField");
-				let title= document.getElementById("title");
+				let signupBtn = document.getElementById("signupBtn");
+				let signinBtn = document.getElementById("signinBtn");
+				let nameField = document.getElementById("nameField");
+				let title = document.getElementById("Title");
 				signinBtn.onclick = function(){
-					nameField.style.maxHeight="0";
-					title.innerHTML="sign In";
+					nameField.style.display = "none"; 
+					title.innerHTML = "Sign In";
 					signupBtn.classList.add("disable");
 					signinBtn.classList.remove("disable");
 				}
-				signinBtn.onclick = function(){
-					nameField.style.maxHeight="0";
-					title.innerHTML="sign In";
+				signupBtn.onclick = function(){
+					nameField.style.display = "block";
+					title.innerHTML = "Sign Up";
 					signupBtn.classList.remove("disable");
 					signinBtn.classList.add("disable");
 				}
