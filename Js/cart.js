@@ -4,6 +4,11 @@ let listCartHTML = document.querySelector('.listCart');
 
 let listProducts = []; 
 
+if (cartVisible){
+	cartContent.style.display = 'none';
+	cartVisible = false;
+}
+
 function showCart(){
 	if (cartVisible){
 		cartContent.style.display = 'none';
