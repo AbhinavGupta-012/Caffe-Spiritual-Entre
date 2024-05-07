@@ -26,7 +26,11 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transform: scale(0);
     transition: height .2s ease;
+}
+.wrapper.active-login{
+    transform: scale(1)translate(-50%,-50%);
 }
 .wrapper.active{
     height: 520px;
@@ -89,8 +93,7 @@ body{
     pointer-events: none;
     transition: .5s;
 }
-.input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:focus~label, .input-box input:valid~label{
     top: -5px;
 }
 .input-box input{
@@ -156,4 +159,20 @@ body{
 }
 .login-register p a:hover{
     text-decoration: underline;
+}
+.login-btn {
+    list-style: none;
+    font-size: 27px;
+    font-weight: 600;
+    position: fixed;
+    right: 40px;
+    color: white;
+    bottom: 40px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.login-btn:hover{
+    color: crimson;
+    padding: 5px 10px;
+    border: 2px solid white;
 }
