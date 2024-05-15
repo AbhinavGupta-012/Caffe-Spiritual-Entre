@@ -21,7 +21,7 @@ h3 {
 #progress {
   position: fixed;
   bottom: 20px;
-  left: 10px;
+  left: 20px;
   height: 70px;
   width: 70px;
   display: none;
