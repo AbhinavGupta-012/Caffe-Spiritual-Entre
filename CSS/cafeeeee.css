@@ -134,6 +134,8 @@ body.showcart .cart-content{
 	cursor: pointer;
 }
 #checkout{
+	font-size: large;
+	background-color: aquamarine;
 	cursor: pointer;
 	position: absolute;
 	margin-top: 75px;
