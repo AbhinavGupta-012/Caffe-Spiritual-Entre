@@ -1,17 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-h1 {
-  color: #ffffff;
-  font-size: 15vmin;
-  text-align: center;
-  padding-top: 30px;
-}
-h3 {
-  color: #001a2e;
-  font-size: 8vmin;
-  text-align: center;
-}
 #progress {
   position: fixed;
   bottom: 20px;
