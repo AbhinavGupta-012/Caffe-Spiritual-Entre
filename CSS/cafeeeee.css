@@ -114,12 +114,21 @@ body.showcart .cart-content{
 	top: 42px;
 	left: 42px;
 }
-.cart-button{
-	color: white;
-	background-color: crimson;
-	border: none;
-	cursor: pointer;
+.cart-button {
+    color: white;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
 }
+
+.cart-button:hover {
+    background-color: darkred; /* Darken the background color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
 .titles{
 	display: flex;
 	color: white;
