@@ -1,5 +1,4 @@
 # Caffe-Spiritual-Entre
-
 Welcome to the official repository for Caffe Spiritual Entré – your ultimate destination for premium coffee and a spiritual experience.
 
 # Overview
